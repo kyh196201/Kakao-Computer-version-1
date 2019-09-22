@@ -1,101 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
-    <title>채팅</title>
-  </head>
-  <body>
-    <main class="chatting__main">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="index.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="chatting.html">
-              <i class="fas fa-comment"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <i class="far fa-smile"></i>
-          </li>
-          <li class="nav__list-item">
-            <i class="far fa-bell"></i>
-          </li>
-          <li class="nav__list-item">
-            <i class="fas fa-bars"></i>
-          </li>
-        </ul>
-      </nav>
-      <section class="chatting-section section">
-        <header class="section__header">
-          <div class="title-box">
-            <h1 class="section__title">
-              채팅
-            </h1>
-            <span class="section__useradd-btn">
-              <i class="fas fa-user-plus"></i>
-            </span>
-          </div>
-          <div class="section__input-box">
-            <span class="input-searchIcon">
-              <i class="fas fa-search"></i>
-            </span>
-            <input
-              type="text"
-              class="section__input"
-              placeholder="채팅방 이름, 참여자 검색"
-            />
-          </div>
-        </header>
-        <section class="chatting__section">
-          <ul class="chatting-chats__list">
-            <li class="chats__chat chat user">
-                    <a href="chat-room.html">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <title>채팅</title>
+</head>
+
+<body>
+  <main class="chatting__main">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="index.html">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="chatting.html">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <i class="far fa-smile"></i>
+        </li>
+        <li class="nav__list-item">
+          <i class="far fa-bell"></i>
+        </li>
+        <li class="nav__list-item">
+          <i class="fas fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    <section class="chatting-section section">
+      <header class="section__header">
+        <div class="title-box">
+          <h1 class="section__title">
+            채팅
+          </h1>
+          <span class="section__useradd-btn">
+            <i class="fas fa-user-plus"></i>
+          </span>
+        </div>
+        <div class="section__input-box">
+          <span class="input-searchIcon">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" class="section__input" placeholder="채팅방 이름, 참여자 검색" />
+        </div>
+      </header>
+      <section class="chatting__section">
+        <ul class="chatting-chats__list">
+          <li class="chats__chat chat user">
+            <a href="chat-room.html">
               <div class="chat__column">
                 <div class="chat__img-box">
-                  <img
-                    src="images/profile.jpg"
-                    alt="leedahee"
-                    width="30px"
-                    height="30px"
-                    class="chat__avatar avatar"
-                  />
-                  <img
-                    src="images/doraemon.png"
-                    width="30px"
-                    height="30px"
-                    class="chat__avatar avatar"
-                  />
-                  <img
-                    src="images/plus-friend.png"
-                    width="30px"
-                    height="30px"
-                    class="chat__avatar avatar"
-                  />
-                  <img
-                    src="images/chatBg-dark.png"
-                    width="30px"
-                    height="30px"
-                    class="chat__avatar avatar"
-                  />
+                  <img src="images/profile.jpg" alt="leedahee" width="30px" height="30px" class="chat__avatar avatar" />
+                  <img src="images/doraemon.png" width="30px" height="30px" class="chat__avatar avatar" />
+                  <img src="images/plus-friend.png" width="30px" height="30px" class="chat__avatar avatar" />
+                  <img src="images/chatBg-dark.png" width="30px" height="30px" class="chat__avatar avatar" />
                 </div>
                 <div class="chat__info-box">
                   <span class="chat__members">
@@ -118,39 +91,36 @@
                 </span>
               </div>
             </a>
-            </li>
-            <li class="chats__chat chat user">
-                    <div class="chat__column">
-                        <img
-                          src="images/doraemon.png"
-                          width="30px"
-                          height="30px"
-                          class="chat__avatar avatar"
-                        />
-                      </div>
-                      <div class="chat__info-box">
-                        <span class="chat__members">
-                          도라에몽
-                        </span>
-                        <span class="chat__members-num">
-                        </span>
-                        <span class="chat__preview">
-                          조아
-                        </span>
-                      </div>
-                    </div>
-                    <div class="chat__column">
-                      <span class="chat__timestamp">
-                        오전 4:05
-                      </span>
-                      <span class="chat__messages-num">
-                        
-                      </span>
-                    </div>
-                  </li>
-          </ul>
-        </section>
+          </li>
+          <li class="chats__chat chat user">
+            <a href="chat-room.html">
+              <div class="chat__column">
+                <img src="images/doraemon.png" width="30px" height="30px" class="chat__avatar avatar" />
+              </div>
+              <div class="chat__info-box">
+                <span class="chat__members">
+                  도라에몽
+                </span>
+                <span class="chat__members-num">
+                </span>
+                <span class="chat__preview">
+                  조아
+                </span>
+              </div>
+              </div>
+              <div class="chat__column">
+                <span class="chat__timestamp">
+                  오전 4:05
+                </span>
+                <span class="chat__messages-num">
+                </span>
+              </div>
+            </a>
+          </li>
+        </ul>
       </section>
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
