@@ -10,56 +10,59 @@
       integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>친구</title>
   </head>
   <body>
-    <main class="friends__main">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="index.html">
-              <i class="fas fa-user"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="chatting.html">
-              <i class="fas fa-comment"></i>
-            </a>
-          </li>
-          <li class="nav__list-item">
-            <a href="more.html">
-              <i class="fas fa-ellipsis-h"></i>
-            </a>
-          </li>
-        </ul>
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <i class="far fa-smile"></i>
-          </li>
-          <li class="nav__list-item">
-            <i class="far fa-bell"></i>
-          </li>
-          <li class="nav__list-item">
-            <i class="fas fa-bars"></i>
-          </li>
-        </ul>
-      </nav>
-      <section class="friends-section section">
-        <header class="section__header">
-          <div class="title-box">
-            <h1 class="section__title">
-              친구
-            </h1>
-            <span class="section__useradd-btn">
-              <i class="fas fa-user-plus"></i>
-            </span>
-          </div>
-          <div class="section__input-box">
-            <span class="input-searchIcon">
-              <i class="fas fa-search"></i>
-            </span>
-            <input type="text" class="section__input" placeholder="이름검색" />
-          </div>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item item__selected">
+          <a href="index.html">
+            <i class="fas fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="chatting.html">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <i class="far fa-smile"></i>
+        </li>
+        <li class="nav__list-item">
+          <i class="far fa-bell"></i>
+        </li>
+        <li class="nav__list-item">
+          <i class="fas fa-bars"></i>
+        </li>
+      </ul>
+    </nav>
+    <main class="friends-main main">
+      <header class="main__header">
+        <div class="title-box">
+          <h1 class="header__title">
+            친구
+          </h1>
+          <span class="main__useradd-btn main__btn">
+            <i class="fas fa-user-plus"></i>
+          </span>
+        </div>
+        <div class="main__input-box">
+          <span class="input-searchIcon">
+            <i class="fas fa-search"></i>
+          </span>
+          <input type="text" class="main__input" placeholder="이름검색" />
+        </div>
+      </header>
+      <section class="friends__section">
+        <section class="my-section">
           <div class="header__user user">
             <div class="user__column">
               <img
@@ -67,11 +70,13 @@
                 alt="leedahee"
                 width="100px"
                 height="100px"
-                class="user__avatar avatar"
+                class="user__avatar avatar b-avatar"
               />
-              <span class="user__name">
-                김승우
-              </span>
+              <div class="user__info-box">
+                <span class="user__name">
+                  김승우
+                </span>
+              </div>
             </div>
             <div class="user__column">
               <span class="user__now-listening">
@@ -80,9 +85,9 @@
               </span>
             </div>
           </div>
-        </header>
+        </section>
         <section class="birthday-friends">
-          <h3 class="birthday-friends__title">
+          <h3 class="birthday-friends__title friends__title">
             생일인 친구
           </h3>
           <ul class="birthday-friends__list">
@@ -95,9 +100,14 @@
                   height="100px"
                   class="user__avatar avatar"
                 />
-                <span class="user__name">
-                  조은별
-                </span>
+                <div class="user__info-box">
+                  <span class="user__name">
+                    조은별
+                  </span>
+                  <span class="user__name-icon">
+                    <i class="fas fa-birthday-cake"></i>
+                  </span>
+                </div>
               </div>
               <div class="user__column">
                 <span class="user__gift">
@@ -114,19 +124,21 @@
                   height="100px"
                   class="user__avatar avatar"
                 />
-                <span class="user__name">
-                  친구의 생일을 확인해보세요!
-                </span>
-                <span class="user__name-num">
-                  2
-                </span>
+                <div class="user__info-box">
+                  <span class="user__name">
+                    친구의 생일을 확인해보세요!
+                  </span>
+                  <span class="user__name-num">
+                    2
+                  </span>
+                </div>
               </div>
               <div class="user__column"></div>
             </li>
           </ul>
         </section>
         <section class="favorite-friends">
-          <h3 class="favorite-friends__title">
+          <h3 class="favorite-friends__title friends__title">
             즐겨찾기
           </h3>
           <ul class="favorite-friends__list">
@@ -139,12 +151,14 @@
                   height="100px"
                   class="user__avatar avatar"
                 />
-                <span class="user__name">
-                  조은별
-                </span>
-                <span class="user__status">
-                  사랑해
-                </span>
+                <div class="user__info-box">
+                  <span class="user__name">
+                    조은별
+                  </span>
+                  <span class="user__status">
+                    사랑해
+                  </span>
+                </div>
               </div>
               <div class="user__column">
                 <span class="user__now-listening">
@@ -157,5 +171,6 @@
         </section>
       </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 </html>

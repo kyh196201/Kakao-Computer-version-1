@@ -1,0 +1,45 @@
+.user {
+  border: 1px solid blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+}
+
+.user .user__column:first-child {
+  background-color: rgb(255, 214, 221);
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+}
+
+.user .user__column:last-child {
+  background-color: rgb(197, 12, 43);
+}
+
+.user .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.user .avatar.b-avatar {
+  /*avtar와 b-avatar 두 속성 모두를 가지고 있는 이미지는 더 크게 표현*/
+  width: 60px;
+  height: 60px;
+}
+
+.user .user__column .user__info-box {
+  border: 1px solid black;
+  text-align: center;
+  line-height: 12px;
+}
+
+.user .user__column .user__info-box .user__name,
+.user .user__column .user__info-box .user__status,
+.user .user__column .user__info-box .user__name-num,
+.user .user__column .user__info-box .user__name-icon {
+  font-size: 13px;
+  font-weight: 700;
+}

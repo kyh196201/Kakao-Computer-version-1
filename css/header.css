@@ -1,0 +1,51 @@
+.main .main__header {
+  padding-top: 37px;
+  padding-bottom: 10px;
+  /*border-bottom: 1px solid rgb(224, 221, 221);*/
+  /*border: 1px solid green;*/
+}
+
+.chatting-main .main__header {
+  border: none;
+}
+
+.main__header .title-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /*border: 1px solid red;*/
+  padding: 0px 20px;
+  margin-bottom: 15px;
+}
+
+.main__header .title-box .header__title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.main__header .title-box .main__btn {
+  font-size: 20px;
+}
+
+.main .main__input-box {
+  border: 1px solid rgb(241, 241, 241);
+  margin: 0px 20px;
+  padding: 3px 8px;
+  border-radius: 10px;
+  background-color: rgb(245, 245, 245);
+}
+
+.main .main__input-box .input-searchIcon {
+  font-size: 12px;
+}
+
+.main .main__input-box .main__input {
+  width: 200px;
+  padding: 5px 0px;
+  padding-left: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
