@@ -1,5 +1,5 @@
 .nav {
-  background-color: #ddd7d7;
+  background-color: #eeebeb;
   position: fixed;
   width: 60px;
   display: flex;
@@ -39,7 +39,7 @@
 }
 
 .nav .nav__list:last-child .nav__list-item:hover {
-  background-color: #d1d1d1;
+  background-color: #f3f1f1;
 }
 
 .nav .nav__list:last-child .nav__list-item:last-child {
@@ -49,4 +49,24 @@
 
 .nav .nav__list:first-child .item__selected {
   color: black;
+}
+
+.nav__list .list-link {
+  position: relative;
+}
+
+.nav .list-link .comment-num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: white;
+  background-color: red;
+  font-size: 10px;
+  padding: 2px;
+  border-radius: 50%;
+  top: -3px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
 }

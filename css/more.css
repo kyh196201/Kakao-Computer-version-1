@@ -1,0 +1,26 @@
+.more-main hr {
+  margin: 5px 20px;
+  opacity: 0.6;
+}
+
+.more-main .more__section .more__list {
+  margin-top: 10px;
+}
+
+.more__list .more__list-item {
+  padding: 20px 20px;
+  cursor: pointer;
+}
+
+.more__list .more__list-item:hover {
+  background-color: rgb(245, 240, 240);
+}
+
+.more__list-item i {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.more__list-item .list-item__title {
+  font-size: 14px;
+}

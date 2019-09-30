@@ -6,6 +6,8 @@
 @import "footer.css";
 @import "friends.css";
 @import "user.css";
+@import "chats.css";
+@import "more.css";
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,181 @@
+/*채팅 각 항목 설정*/
+.chat {
+  /* border: 1px solid red;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  /*transition: background-color 0.5s ease-in-out;*/
+}
+
+.chat:hover {
+  background-color: rgb(245, 240, 240);
+}
+
+/*이미지 컨테이너기본 사이즈 설정*/
+.chat .chat__img-container {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+/*이미지 기본 설정*/
+.img-box .avatar {
+  border-radius: 10px;
+  height: 100%;
+}
+
+/*이미지가 4개 있을 경우 컨테이너 설정*/
+.chat .chat__img-container.four-item {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 23px 23px;
+  grid-row: auto auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 1px;
+}
+
+/*이미지가 3개 있을 경우 컨테이너 설정*/
+.chat .chat__img-container.three-item {
+  background-color: #fff;
+  position: relative; /*박스들을 정렬하기 위해 relative 설정*/
+}
+
+.chat .chat__img-container.two-item {
+  background-color: #fff;
+  position: relative;
+}
+
+/*이미지가 4개 있을 경우 이미지 박스 설정*/
+.chat__img-container.four-item .img-box {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*이미지가 3개 있을 경우 이미지 박스 기본 설정*/
+.chat__img-container.three-item .img-box {
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*display: inline-block; 정렬을 위해 inline-block 설정*/
+}
+
+/*세개중 첫번째 이미지 박스 설정 position: absolute로 수동 설정*/
+.chat__img-container.three-item .img-box:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 4px;
+  left: 13px;
+  width: 22px;
+  z-index: 2;
+}
+
+/*세개중 두번째 이미지 박스 설정 position: absolute로 수동 설정*/
+.chat__img-container.three-item .img-box:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4px;
+  left: 4px;
+}
+
+/*세개중 세번째 이미지 박스 설정 position: absolute로 수동 설정*/
+.chat__img-container.three-item .img-box:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  z-index: 1;
+}
+
+.chat__img-container.two-item .img-box {
+  height: 28px;
+}
+
+.chat__img-container.two-item .img-box:first-child {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+}
+
+/*이미지 두개인 경우 두번째 이미지 정렬*/
+.chat__img-container.two-item .img-box:last-child {
+  position: absolute;
+  right: 2px;
+  bottom: 2px;
+}
+
+/*이미지가 한개 일 경우 이미지 박스 설정*/
+.chat .chat__img-container.one-item .img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/*이미지가 3,4개일 때 border-radius*/
+.chat__img-container.four-item .img-box .avatar {
+  border-radius: 8px;
+}
+
+/*흰 테두리를 주어 조금 띄어져 있는 것 처럼 보이게 설정*/
+.chat__img-container.three-item .img-box .avatar {
+  border: 2px solid white;
+  box-sizing: content-box;
+  border-radius: 11 px;
+}
+
+.chat__img-container.two-item .img-box .avatar {
+  border: 2px solid white;
+}
+
+.chat .chat__column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat .chat__column:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat .chat__column .chat__info-box .chat__members {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chat .chat__column .chat__info-box .chat__members-num {
+  font-size: 12px;
+  color: gray;
+}
+
+.chat .chat__column .chat__info-box .chat__preview {
+  display: block;
+  margin-top: 7px;
+  font-size: 12px;
+  color: gray;
+}
+
+.chat .chat__column:last-child .chat__timestamp {
+  font-size: 11px;
+  color: rgb(179, 175, 175);
+}
+
+.chat .chat__column:last-child .chat__messages-num {
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  border-radius: 10px;
+  padding: 2px;
+  margin-top: 7px;
+  align-self: flex-end;
+}

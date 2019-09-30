@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>채팅</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
-  <title>채팅</title>
-</head>
-
-<body>
+  <body>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__list-item">
-          <a href="index.html">
+          <a href="index.html" class="list-link">
             <i class="fas fa-user"></i>
           </a>
         </li>
         <li class="nav__list-item item__selected">
-          <a href="chatting.html">
+          <a href="chatting.html" class="list-link">
+            <span class="comment-num">
+              42
+            </span>
             <i class="fas fa-comment"></i>
           </a>
         </li>
         <li class="nav__list-item">
-          <a href="more.html">
+          <a href="more.html" class="list-link">
+            <span class="comment-num">
+              1
+            </span>
             <i class="fas fa-ellipsis-h"></i>
           </a>
         </li>
@@ -56,64 +65,174 @@
           <span class="input-searchIcon">
             <i class="fas fa-search"></i>
           </span>
-          <input type="text" class="main__input" placeholder="채팅방 이름, 참여자 검색" />
+          <input
+            type="text"
+            class="main__input"
+            placeholder="채팅방 이름, 참여자 검색"
+          />
         </div>
       </header>
       <section class="chatting__section">
-        <ul class="chatting-chats__list">
-          <li class="chats__chat chat">
+        <ul class="chats-list">
+          <li class="chats__list-item">
             <a href="chat-room.html">
-              <div class="chat__column">
-                <div class="chat__img-box">
-                  <img src="images/profile.jpg" alt="leedahee" width="30px" height="30px" class="chat__avatar avatar"/>
-                  <img src="images/doraemon.png" width="30px" height="30px" class="chat__avatar avatar" />
-                  <img src="images/plus-friend.png" width="30px" height="30px" class="chat__avatar avatar" />
-                  <img src="images/chatBg-dark.png" width="30px" height="30px" class="chat__avatar avatar" />
+              <div class="chats__chat chat">
+                <div class="chat__column">
+                  <div class="chat__img-container four-item">
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        alt="leedahee"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/plus-friend.png"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/chatBg-dark.png"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                  </div>
+                  <div class="chat__info-box">
+                    <span class="chat__members">
+                      경복
+                    </span>
+                    <span class="chat__members-num">
+                      9
+                    </span>
+                    <span class="chat__preview">
+                      감사합니다.
+                    </span>
+                  </div>
                 </div>
-                <div class="chat__info-box">
-                  <span class="chat__members">
-                    경복
+                <div class="chat__column">
+                  <span class="chat__timestamp">
+                    오전 4:04
                   </span>
-                  <span class="chat__members-num">
-                    9
-                  </span>
-                  <span class="chat__preview">
-                    감사합니다.
+                  <span class="chat__messages-num">
+                    42
                   </span>
                 </div>
-              </div>
-              <div class="chat__column">
-                <span class="chat__timestamp">
-                  오전 4:04
-                </span>
-                <span class="chat__messages-num">
-                  42
-                </span>
               </div>
             </a>
           </li>
-          <li class="chats__chat chat">
+          <li class="chats__list-item">
             <a href="chat-room.html">
-              <div class="chat__column">
-                <img src="images/doraemon.png" width="30px" height="30px" class="chat__avatar avatar" />
+              <div class="chats__chat chat">
+                <div class="chat__column">
+                  <div class="chat__img-container one-item">
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat__info-box">
+                    <span class="chat__members">
+                      도라에몽
+                    </span>
+                    <span class="chat__preview">
+                      조아
+                    </span>
+                  </div>
+                </div>
+                <div class="chat__column">
+                  <span class="chat__timestamp">
+                    오전 4:05
+                  </span>
+                </div>
               </div>
-              <div class="chat__info-box">
-                <span class="chat__members">
-                  도라에몽
-                </span>
-                <span class="chat__members-num">
-                </span>
-                <span class="chat__preview">
-                  조아
-                </span>
+            </a>
+          </li>
+          <li class="chats__list-item">
+            <a href="chat-room.html">
+              <div class="chats__chat chat">
+                <div class="chat__column">
+                  <div class="chat__img-container three-item">
+                    <div class="img-box">
+                      <img
+                        src="images/plus-friend.png"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat__info-box">
+                    <span class="chat__members">
+                      도라에몽
+                    </span>
+                    <span class="chat__preview">
+                      조아
+                    </span>
+                  </div>
+                </div>
+                <div class="chat__column">
+                  <span class="chat__timestamp">
+                    오전 4:05
+                  </span>
+                </div>
               </div>
-              </div>
-              <div class="chat__column">
-                <span class="chat__timestamp">
-                  오전 4:05
-                </span>
-                <span class="chat__messages-num">
-                </span>
+            </a>
+          </li>
+          <li class="chats__list-item">
+            <a href="chat-room.html">
+              <div class="chats__chat chat">
+                <div class="chat__column">
+                  <div class="chat__img-container two-item">
+                    <div class="img-box">
+                      <img
+                        src="images/plus-friend.png"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                    <div class="img-box">
+                      <img
+                        src="images/profile.jpg"
+                        class="chat__avatar avatar"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="chat__info-box">
+                    <span class="chat__members">
+                      두개
+                    </span>
+                    <span class="chat__preview">
+                      두개
+                    </span>
+                  </div>
+                </div>
+                <div class="chat__column">
+                  <span class="chat__timestamp">
+                    오전 4:05
+                  </span>
+                </div>
               </div>
             </a>
           </li>
@@ -121,7 +240,5 @@
       </section>
     </main>
     <footer class="footer"></footer>
-  
-</body>
-
+  </body>
 </html>
