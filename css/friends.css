@@ -14,6 +14,10 @@
   margin-top: 10px;
 }
 
+.main .friends__section {
+  margin-top: 121px;
+}
+
 .friends-main hr {
   margin: 5px 20px;
   opacity: 0.6;

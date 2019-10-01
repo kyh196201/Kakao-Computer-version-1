@@ -1,8 +1,22 @@
+.main {
+  width: calc(100% - 60px);
+}
+
 .main .main__header {
   padding-top: 37px;
   padding-bottom: 10px;
   /*border-bottom: 1px solid rgb(224, 221, 221);*/
   /*border: 1px solid green;*/
+  background-color: white;
+  z-index: 1;
+}
+
+.chatting-main .main__header,
+.friends-main .main__header {
+  position: fixed;
+  width: calc(100% - 60px);
+  top: 0px;
+  right: 0px;
 }
 
 .chatting-main .main__header {

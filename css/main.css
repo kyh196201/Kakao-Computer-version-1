@@ -4,5 +4,5 @@
   width: -moz-calc(100% - 60px); /* for Firefox */
   width: calc(100% - 60px); /* for IE */
 
-  min-height: 2000px;
+  min-height: 100vh;
 }

@@ -8,6 +8,7 @@
 @import "user.css";
 @import "chats.css";
 @import "more.css";
+@import "chat-room.css";
 
 * {
   box-sizing: border-box;
