@@ -1,134 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/style.css" />
     <title>더보기</title>
-  </head>
-  <body>
+</head>
+
+<body class="chat-room-body">
     <header class="chat-room__header-container">
-      <div class="chat-room__header">
-        <div class="header__column">
-          <div class="four-item img-container">
-            <div class="img-box">
-              <img
-                src="images/profile.jpg"
-                alt="leedahee"
-                class="header__avatar avatar"
-              />
+        <div class="chat-room__header">
+            <div class="header__column">
+                <div class="four-item img-container">
+                    <div class="img-box">
+                        <img src="images/profile.jpg" alt="leedahee" class="header__avatar avatar" />
+                    </div>
+                    <div class="img-box">
+                        <img src="images/profile.jpg" class="header__avatar avatar" />
+                    </div>
+                    <div class="img-box">
+                        <img src="images/plus-friend.png" class="header__avatar avatar" />
+                    </div>
+                    <div class="img-box">
+                        <img src="images/chatBg-dark.png" class="header__avatar avatar" />
+                    </div>
+                </div>
+                <div class="chat-room__info-box">
+                    <span class="chat__members chat-room__members">
+                        경복
+                    </span>
+                    <span class=" chat-room__members-num"> (9) </span>
+                    <div class="chat-room__info-btn-container">
+                        <span class="info-btn">
+                            <i class="fas fa-suitcase"></i>
+                        </span>
+                        <span class="info-btn">
+                            <i class="fas fa-search"></i>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="img-box">
-              <img src="images/profile.jpg" class="header__avatar avatar" />
+            <div class="header__column">
+                <div class="header__screen-btn">
+                    <i class="far fa-window-minimize"></i>
+                    <i class="far fa-window-maximize"></i>
+                    <i class="far fa-window-close"></i>
+                </div>
+                <div class="header__btn-container">
+                    <span class="header__btn">
+                        <i class="fas fa-bell"></i>
+                    </span>
+                    <span class="header__btn">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
             </div>
-            <div class="img-box">
-              <img src="images/plus-friend.png" class="header__avatar avatar" />
-            </div>
-            <div class="img-box">
-              <img src="images/chatBg-dark.png" class="header__avatar avatar" />
-            </div>
-          </div>
-          <div class="chat-room__info-box">
-            <span class="chat__members chat-room__members">
-              경복
-            </span>
-            <span class=" chat-room__members-num"> (9) </span>
-            <div class="chat-room__info-btn-container">
-              <span class="info-btn">
-                <i class="fas fa-suitcase"></i>
-              </span>
-              <span class="info-btn">
-                <i class="fas fa-search"></i>
-              </span>
-            </div>
-          </div>
         </div>
-        <div class="header__column">
-          <div class="header__screen-btn">
-            <i class="far fa-window-minimize"></i>
-            <i class="far fa-window-maximize"></i>
-            <i class="far fa-window-close"></i>
-          </div>
-          <div class="header__btn-container">
-            <span class="header__btn">
-              <i class="fas fa-bell"></i>
-            </span>
-            <span class="header__btn">
-              <i class="fas fa-bars"></i>
-            </span>
-          </div>
-        </div>
-      </div>
     </header>
     <main class="chat-room-main">
-      <ul class="chat-lists">
-        <li class="chat-lists__message">
-          <div class="header__user user">
-            <div class="user__column message__column">
-              <img
-                src="images/profile.jpg"
-                alt="leedahee"
-                width="100px"
-                height="100px"
-                class="user__avatar avatar b-avatar"
-              />
-              <div class="user__info-box message-box">
-                <span class="user__name message-author">
-                  김승우
-                </span>
-                <div class="message__bubble">
-                  우리 수요일에 만나자!!
-                </div>
-                <div class="message__info-container">
-                  <span class="message__num-left">
-                    3
-                  </span>
-                  <span class="cmessage__timestamp">
-                    오후 4: 19
-                  </span>
-                </div>
+        <ul class="chat-room-lists">
+            <li class="lists__message message receive-message">
+                <img src="images/profile.jpg" alt="leedahee" width="100px" height="100px"
+                    class="message__avatar avatar" />
+                <div class="message-box">
+                    <span class=" message-author">
+                        김승우
+                    </span>
+                    <ul class="message-content">
+                        <li class="message-bubble">
+                            <span class="bubble__text">
+                                오 태연 광화문에서 노래한다
+                            </span>
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                        </li>
+                        <li class="message-bubble">
+                            <span class="bubble__text">
+                                서울 뮤직 페스티벌 온거같은데.
+                            </span>
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="message__bubble">
+                우리 수요일에 만나자!!
               </div>
-            </div>
-            <div class="user__column message__column"></div>
-          </div>
-        </li>
-        <li class="chat-lists__message">
-          <div class="header__user user">
-            <div class="user__column message__column">
               <div class="message__info-container">
+                <span class="message__num-left">
+                  3
+                </span>
                 <span class="message__timestamp">
                   오후 4: 19
                 </span>
-              </div>
-              <div class="user__info-box message-box">
-                <div class="message__bubble">
-                  우리 수요일에 만나자!!
+              </div> -->
                 </div>
+            </li>
+            <li class="lists__message message send-message">
+                <div class="message-box">
+                    <ul class="message-content">
+                        <li class="message-bubble">
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                            <span class="bubble__text">
+                                우리 수요일에
+                            </span>
+                        </li>
+                        <li class="message-bubble">
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                            <span class="bubble__text">
+                                만나자!
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="lists__message message receive-message">
+                <img src="images/profile.jpg" alt="leedahee" width="100px" height="100px"
+                    class="message__avatar avatar" />
+                <div class="message-box">
+                    <span class=" message-author">
+                        김승우
+                    </span>
+                    <ul class="message-content">
+                        <li class="message-bubble">
+                            <span class="bubble__text">
+                                오 태연 광화문에서 노래한다
+                            </span>
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                        </li>
+                        <li class="message-bubble">
+                            <span class="bubble__text">
+                                서울 뮤직 페스티벌 온거같은데.
+                            </span>
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                        </li>
+                        <li class="message-bubble">
+                            <span class="bubble__text">
+                                진짜?
+                            </span>
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- <div class="message__bubble">
+                우리 수요일에 만나자!!
               </div>
-            </div>
-            <div class="user__column message"></div>
-          </div>
-        </li>
-      </ul>
+              <div class="message__info-container">
+                <span class="message__num-left">
+                  3
+                </span>
+                <span class="message__timestamp">
+                  오후 4: 19
+                </span>
+              </div> -->
+                </div>
+            </li>
+            <li class="lists__message message send-message">
+                <div class="message-box">
+                    <ul class="message-content">
+                        <li class="message-bubble">
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                            <span class="bubble__text">
+                                우리 수요일에
+                            </span>
+                        </li>
+                        <li class="message-bubble">
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                            <span class="bubble__text">
+                                만나자!
+                            </span>
+                        </li>
+                        <li class="message-bubble">
+                            <div class="bubble__adon">
+                                <span class="message__num-left">
+                                    1
+                                </span>
+                                <span class="message__timestamp">
+                                    오후 6:49
+                                </span>
+                            </div>
+                            <span class="bubble__text">
+                                만나자!
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
     </main>
     <footer class="footer chat-room__footer">
-      <input type="text" class="chat-room__input" />
-      <span class="send-btn">
-        전송
-      </span>
-      <div class="footter-btn">
-        <i class="far fa-smile-wink"></i>
-        <i class="fas fa-paperclip"></i>
-        <i class="fas fa-mountain"></i>
-        <i class="far fa-check-square"></i>
-      </div>
+        <div class="footer__input-container">
+            <textarea type="text" class="chat-room__input" /></textarea>
+            <input type="button" value="전송" class="send-btn">
+            
+        </div>
+        <div class="footer-btn">
+            <i class="far fa-smile-wink"></i>
+            <i class="fas fa-paperclip"></i>
+            <i class="fas fa-mountain"></i>
+            <i class="far fa-check-square"></i>
+        </div>
     </footer>
-  </body>
+</body>
+
 </html>

@@ -1,3 +1,11 @@
+/*************************************************************************************************/
+/*헤더에 관한 css*/
+/*************************************************************************************************/
+
+.chat-room-body {
+  background-color: #b2c7d9;
+}
+
 .chat-room__header-container {
   background-color: #a9bdce;
   position: fixed;
@@ -147,7 +155,197 @@
 }
 
 .chat-room-main {
-  margin-top: 70px;
+  margin-top: 80px;
   background-color: #b2c7d9;
   min-height: 100vh;
+}
+
+/*************************************************************************************************/
+/*채팅 메시지에 관한 css*/
+/*************************************************************************************************/
+
+.chat-room-lists .message {
+  display: flex;
+  padding: 0px 10px;
+}
+
+.chat-room-lists .message.receive-message {
+  /*justify-content:flex-start;*/
+}
+
+.chat-room-lists .message.send-message {
+  justify-content: flex-end;
+}
+
+.receive-message .avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 13px;
+  margin-right: 5px;
+}
+
+.receive-message .message-box .message-author {
+  font-size: 12px;
+  color: #3e3e3e;
+}
+
+.receive-message .message-box .message-bubble {
+  display: flex;
+  margin-top: 7px;
+  height: 28px;
+}
+
+.receive-message .message-bubble .bubble__text,
+.send-message .message-bubble .bubble__text {
+  padding: 5px 5px 10px 5px;
+  font-size: 11px;
+  background-color: white;
+  border-radius: 3px;
+  color: #3e3e3e;
+  height: 100%;
+}
+
+.send-message .message-bubble .bubble__text {
+  background-color: #ffeb33;
+}
+
+/*************************************************************************************************/
+/*받는 메시지에 관한 css*/
+/*************************************************************************************************/
+
+.receive-message .message-bubble .bubble__adon {
+  position: relative;
+  margin-left: 5px;
+}
+
+.receive-message .message-bubble .bubble__adon .message__num-left {
+  font-size: 10px;
+  color: #afc33a;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.receive-message .message-bubble .bubble__adon .message__timestamp {
+  display: none;
+  color: #3e3e3e;
+  font-size: 10px;
+}
+
+.receive-message .message-bubble:last-child .bubble__adon .message__num-left {
+  position: static;
+}
+
+.receive-message .message-bubble:last-child .bubble__adon .message__timestamp {
+  display: block;
+}
+
+/*************************************************************************************************/
+/*보내는 메시지에 관한 css*/
+/*************************************************************************************************/
+
+.send-message .message-box .message-bubble {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 7px;
+  height: 28px;
+}
+
+.send-message .message-bubble .bubble__adon {
+  position: relative;
+  margin-right: 5px;
+  height: 100%;
+}
+
+.send-message .message-bubble .bubble__adon .message__num-left {
+  font-size: 10px;
+  color: #afc33a;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.send-message .message-bubble .bubble__adon .message__timestamp {
+  display: none;
+  color: #3e3e3e;
+  font-size: 10px;
+}
+
+.send-message .message-bubble:last-child .bubble__adon .message__num-left {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+
+.send-message .message-bubble:last-child .bubble__adon .message__timestamp {
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  right: 0px;
+  width: 41px;
+}
+
+/*************************************************************************************************/
+/*메시지 입력창에 관한 css*/
+/*************************************************************************************************/
+
+.chat-room-body .footer {
+  /*다른 화면의 footer랑 같은 속성*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  /*다른 화면의 footer랑 같은 속성*/
+}
+
+.footer .fotter__input-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.footer .chat-room__input {
+  width: 90%;
+  height: 60px;
+  font-size: 10px;
+  font-weight: 800;
+  color: black;
+  outline: none;
+  border: none;
+}
+
+.footer .send-btn {
+  background-color: #ffeb33;
+  font-size: 12px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 48px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.footer .send-btn:hover {
+  background-color: #f1de32;
+}
+
+.footer .send-btn:focus {
+  background-color: #dac82c;
+}
+
+.footer .footer-btn i {
+  margin-right: 10px;
+  opacity: 0.6;
+}
+
+.footer .footer-btn i:hover {
+  color: rgb(33, 112, 158);
 }
